@@ -10,5 +10,5 @@ abstract class RequestBodyFactory
 {
     use Referencable;
 
-    abstract public function build(RequestAttribute $attribute): RequestBody;
+    abstract public function build(RequestBodyAttribute $attribute): RequestBody;
 }
