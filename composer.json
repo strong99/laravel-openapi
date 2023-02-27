@@ -36,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "strong99\\LaravelOpenApi\\": "src/"
+            "Vyuldashev\\LaravelOpenApi\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "strong99\\LaravelOpenApi\\Tests\\": "tests/",
+            "Vyuldashev\\LaravelOpenApi\\Tests\\": "tests/",
             "Examples\\Petstore\\": "examples/petstore/"
         }
     },
@@ -51,7 +51,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "strong99\\LaravelOpenApi\\OpenApiServiceProvider"
+                "Vyuldashev\\LaravelOpenApi\\OpenApiServiceProvider"
             ]
         }
     },
