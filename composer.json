@@ -1,6 +1,6 @@
 {
-    "name": "vyuldashev/laravel-openapi",
-    "description": "Generate OpenAPI Specification for Laravel Applications",
+    "name": "strong99/laravel-openapi",
+    "description": "Generate OpenAPI Specification for Laravel Applications, altered by strong99",
     "keywords": [
         "laravel",
         "openapi",
@@ -16,6 +16,10 @@
         {
             "name": "Vladimir Yuldashev",
             "email": "misterio92@gmail.com"
+        },
+        {
+            "name": "strong99",
+            "role": "contributor"
         }
     ],
     "require": {
@@ -32,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Vyuldashev\\LaravelOpenApi\\": "src/"
+            "strong99\\LaravelOpenApi\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vyuldashev\\LaravelOpenApi\\Tests\\": "tests/",
+            "strong99\\LaravelOpenApi\\Tests\\": "tests/",
             "Examples\\Petstore\\": "examples/petstore/"
         }
     },
@@ -47,7 +51,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vyuldashev\\LaravelOpenApi\\OpenApiServiceProvider"
+                "strong99\\LaravelOpenApi\\OpenApiServiceProvider"
             ]
         }
     },
