@@ -15,7 +15,7 @@ class CallbacksBuilder
             ->filter(static fn (object $attribute) => $attribute instanceof CallbackAttribute)
             ->map(static function (CallbackAttribute $attribute) {
                 $factory = app($attribute->factory);
-                $pathItem = $factory->build();
+                $pathItem = $factory->build($attribute);
 
                 if ($factory instanceof Reusable) {
                     return PathItem::ref('#/components/callbacks/'.$pathItem->objectId);

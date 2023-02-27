@@ -15,7 +15,7 @@ class ResponsesBuilder
             ->filter(static fn (object $attribute) => $attribute instanceof ResponseAttribute)
             ->map(static function (ResponseAttribute $attribute) {
                 $factory = app($attribute->factory);
-                $response = $factory->build();
+                $response = $factory->build($attribute);
 
                 if ($factory instanceof Reusable) {
                     return Response::ref('#/components/responses/'.$response->objectId)
